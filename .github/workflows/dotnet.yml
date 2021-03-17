@@ -25,9 +25,13 @@ jobs:
       # You may pin to the exact commit or the version.
       # uses: Xotabu4/selenoid-github-action@abe532e06774138cf8c38c5dac461071de092504
       uses: Xotabu4/selenoid-github-action@v1      
-    - name: Setup Chrome
+    - name: Setup Chrome    
       # You may pin to the exact commit or the version.
       # uses: browser-actions/setup-chrome@4fa655aad48f56911cad16db9252399a9e592848
       uses: browser-actions/setup-chrome@v0.0.0
+      with:
+        chromium-version: 89.x
+    #- name: setup-chromedriver
+    #  uses: nanasess/setup-chromedriver@v1.0.1        
     - name: Test
       run: dotnet test --no-build --verbosity normal
