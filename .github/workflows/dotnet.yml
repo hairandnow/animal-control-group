@@ -30,7 +30,7 @@ jobs:
       # uses: browser-actions/setup-chrome@4fa655aad48f56911cad16db9252399a9e592848
       uses: browser-actions/setup-chrome@v0.0.0
       with:
-        chromium-version: 89.x
+        chromium-version: 89.0.4389.95
     #- name: setup-chromedriver
     #  uses: nanasess/setup-chromedriver@v1.0.1        
     - name: Test
