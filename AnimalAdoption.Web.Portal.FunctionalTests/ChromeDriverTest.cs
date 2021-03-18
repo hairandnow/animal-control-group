@@ -24,6 +24,8 @@ namespace AnimalAdoption.Web.Portal.FunctionalTests
             {
                 PageLoadStrategy = PageLoadStrategy.Normal
             };
+            options.AddArguments("--disable-dev-shm-usage");
+            options.AddArguments("--no-sandbox");            
             _driver = new ChromeDriver(options);
         }
 
